@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <!--<com.gdgst.common.commonwidget.NormalTitleBar
+        android:id="@+id/ntb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />-->
+
+
+
+    <RelativeLayout
+        android:id="@+id/middle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <!-- got a view here for handwriting -->
+        <com.gdgst.androidfire.practise.WriteView
+            android:id="@+id/practise_write_view"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dip"
+        android:orientation="horizontal"
+        android:padding="5dip" >
+
+        <Button
+            android:id="@+id/practise_previous_btn"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:layout_margin="3dp"
+            android:background="#26bbf9"
+            android:textColor="@color/white"
+            android:text="上一个" />
+
+        <Button
+            android:id="@+id/practise_clear_btn"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:layout_margin="3dp"
+            android:background="#26bbf9"
+            android:textColor="@color/white"
+            android:text="清除" />
+
+        <Button
+            android:id="@+id/practise_next_btn"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:layout_margin="3dp"
+            android:background="#26bbf9"
+            android:textColor="@color/white"
+            android:text="下一个" />
+    </LinearLayout>
+
+</LinearLayout>

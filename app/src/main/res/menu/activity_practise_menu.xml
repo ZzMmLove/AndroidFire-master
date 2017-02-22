@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/activity_practise_menu_preview"
+        android:title="上一个"
+        android:showAsAction="always"/>
+    <item android:id="@+id/activity_practise_menu_clean"
+        android:title="清除"
+        android:showAsAction="always"/>
+    <item android:id="@+id/activity_practise_menu_next"
+        android:title="下一个"
+        android:showAsAction="always"/>
+</menu>
