@@ -36,7 +36,6 @@
         <activity android:name="com.gdgst.androidfire.ui.news.activity.AboutActivity"/>
         <activity android:name="com.gdgst.androidfire.ui.main.view.PractiseActivity"/>
         <activity android:name=".practise.PractiseOriginalActivity"/>
-        <activity android:name=".practise.PractiseOriginalOneActivity"/>
 
         <!-- 友盟统计 (原作者的value:57e8e398e0f55ae655000723) -->
         <meta-data

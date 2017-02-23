@@ -6,6 +6,7 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Display;
+import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.Toast;
@@ -13,6 +14,7 @@ import android.widget.Toast;
 import com.gdgst.androidfire.R;
 import com.gdgst.androidfire.ui.main.view.PractiseWriteViewListener;
 import com.gdgst.androidfire.ui.main.view.RecordUtil;
+import com.gdgst.common.commonwidget.NormalTitleBar;
 
 import org.apache.http.util.EncodingUtils;
 
@@ -38,6 +40,8 @@ public class PractiseOriginalActivity extends Activity {
     Button clearButton;
     @Bind(R.id.practise_next_btn)
     Button nextButton;
+
+    private NormalTitleBar normalTitleBar;
 
 
     private static int SCREEN_HEIGHT = 0;
@@ -77,6 +81,14 @@ public class PractiseOriginalActivity extends Activity {
     }
 
     public void init() {
+        normalTitleBar = (NormalTitleBar) findViewById(R.id.practise_frament_layout_origin_NormalTitleBar);
+        normalTitleBar.setBackVisibility(true);
+        normalTitleBar.setOnBackListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                PractiseOriginalActivity.this.finish();
+            }
+        });
 
         writeView.addPractiseWriteViewListener(new PractiseWriteViewListener()
         {
@@ -219,14 +231,5 @@ public class PractiseOriginalActivity extends Activity {
 //
 //        return fontLibName;
 //    }
-
-    @Override
-    protected void onResume() {
-        // 设置为横屏
-        if(getRequestedOrientation()!= ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE){
-            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
-        }
-        super.onResume();
-    }
 
 }

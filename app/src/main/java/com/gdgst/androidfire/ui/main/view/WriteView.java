@@ -171,9 +171,6 @@ public class WriteView extends SurfaceView implements
 
     private PractiseWriteViewListener practiseWriteViewListener;
 
-    private int mFistHeight, mSecondHeight;
-
-
     private Context context;
 
     /**
@@ -231,17 +228,24 @@ public class WriteView extends SurfaceView implements
             DEFAULT_START_X = screenWidth / 9;
             DEFAULT_START_Y = screenHeight / 3;*/
             DEFAULT_TEXT_SIZE = screenHeight * 3 / 8;
-            DEFAULT_START_X = screenWidth / 8;
+
+            int a = ((DEFAULT_TEXT_SIZE*3)+140)/2;
+            int b = screenWidth / 2;
+            int testStartX = b - a;
+
+            DEFAULT_START_X = testStartX;//screenWidth / 8;
             DEFAULT_START_Y = screenHeight / 3;
         }else if(PractiseActivity.isSixOrNineOnClick == 9){
             /*DEFAULT_TEXT_SIZE = screenWidth * 3 / 17;
             DEFAULT_START_X = screenWidth / 8;
             DEFAULT_START_Y = screenHeight / 4;*/
             DEFAULT_TEXT_SIZE = screenHeight * 3 / 12;
-            float screenWidth_Middle_Coordinate = screenWidth / 2;
-            float oneWord_width = getStringWidth(DEFAULT_FONT_DEMO) / 2;
-            float tmp = screenWidth_Middle_Coordinate - (((oneWord_width)*3)+50);
-            DEFAULT_START_X = (int) tmp / 2;//screenWidth / 5;
+
+            int a = ((DEFAULT_TEXT_SIZE*3)+140)/2;
+            int b = screenWidth / 2;
+            int testStartX = b - a;
+
+            DEFAULT_START_X = testStartX;//screenWidth / 4;
             DEFAULT_START_Y = screenHeight / 4;
         }
 
@@ -429,14 +433,6 @@ public class WriteView extends SurfaceView implements
         canvas.drawText(drawText,DEFAULT_START_X+getRightWordXToMove(),DEFAULT_START_Y+yMoveDown,textPaint);
     }
 
-    private void drawTextLastThreeWord(String drawText, Canvas canvas) {
-        String one = drawText.substring(0,1);
-        String two = drawText.substring(1,2);
-        String three = drawText.substring(2,3);
-        canvas.drawText(one,DEFAULT_START_X,DEFAULT_START_Y+800,textPaint);
-        canvas.drawText(two,DEFAULT_START_X+400,DEFAULT_START_Y+800,textPaint);
-        canvas.drawText(three,DEFAULT_START_X+800,DEFAULT_START_Y+800,textPaint);
-    }
 
     private void penDraw(Canvas canvas) {
         canvas.drawPath(path, handwritingPaint);
@@ -614,7 +610,7 @@ public class WriteView extends SurfaceView implements
     private float getMiddleWordXToRight() {
         float f = 0;
         float tmp = rightTopX - leftTopX;
-        f = tmp+50;
+        f = tmp+70;
         return f;
     }
 
@@ -625,7 +621,7 @@ public class WriteView extends SurfaceView implements
     private float getRightWordXToMove() {
         float n = 0;
         float tmp = (rightTopX - leftTopX)*2;
-        n = tmp + 100;
+        n = tmp + 140;
         return n;
     }
 

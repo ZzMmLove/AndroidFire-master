@@ -17,7 +17,6 @@ import android.widget.Toast;
 
 import com.gdgst.androidfire.R;
 import com.gdgst.androidfire.practise.PractiseOriginalActivity;
-import com.gdgst.androidfire.practise.PractiseOriginalOneActivity;
 import com.gdgst.androidfire.ui.main.view.PractiseActivity;
 import com.gdgst.androidfire.ui.main.view.PractiseWriteView;
 import com.gdgst.androidfire.ui.main.view.RecordUtil;
@@ -65,7 +64,7 @@ public class PractiseMainFragment extends Fragment implements View.OnClickListen
     private static String curLibName = null;
     View view;
 
-    private NormalTitleBar ntb;
+    private NormalTitleBar normalTitleBar;
     private PractiseWriteView writeView;
     private Button practisePreviousBtn;
     private Button practiseClearBtn;
@@ -175,7 +174,7 @@ public class PractiseMainFragment extends Fragment implements View.OnClickListen
             rootView = inflater.inflate(R.layout.fra_practise, container, false);
         }
 
-        ntb = (NormalTitleBar) rootView.findViewById(R.id.ntb);
+        normalTitleBar = (NormalTitleBar) rootView.findViewById(R.id.fra_practise_NormalTitleBar);
         //writeView = (PractiseWriteView) rootView.findViewById(R.id.practise_write_view);
         //practisePreviousBtn = (Button) rootView.findViewById(R.id.practise_previous_btn);
         //practiseClearBtn = (Button) rootView.findViewById(R.id.practise_clear_btn);
@@ -192,13 +191,6 @@ public class PractiseMainFragment extends Fragment implements View.OnClickListen
                 startActivity(new Intent(getActivity(), PractiseOriginalActivity.class));
             }
         });
-        Button button_original_one = (Button) rootView.findViewById(R.id.fra_practise_Button_original_one);
-        button_original_one.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getActivity(), PractiseOriginalOneActivity.class));
-            }
-        });
 
         resource = getResources();
         packageName = getActivity().getPackageName();
@@ -212,9 +204,8 @@ public class PractiseMainFragment extends Fragment implements View.OnClickListen
         buttonNineWordPractise.setOnClickListener(this);
         buttonSixWordPractise.setOnClickListener(this);
 
-        ntb.setTvLeftVisiable(false);//ntb 标题栏
-        ntb.setTitleText(getString(R.string.lianzi));
-
+        normalTitleBar.setTvLeftVisiable(false);//ntb 标题栏
+        normalTitleBar.setTitleText(getString(R.string.lianzi));
         return rootView;
     }
 

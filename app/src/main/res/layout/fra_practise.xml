@@ -7,7 +7,7 @@
         android:orientation="vertical" >
 
         <com.gdgst.common.commonwidget.NormalTitleBar
-            android:id="@+id/ntb"
+            android:id="@+id/fra_practise_NormalTitleBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -96,17 +96,12 @@
             android:layout_marginRight="20dp"/>
 
         <Button
-            android:text="Button"
+            android:text="1字帖练习"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="80dp"
             android:id="@+id/fra_practise_Button_original"
-            android:layout_weight="1" />
-
-        <Button
-            android:text="Button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/fra_practise_Button_original_one"
+            android:background="#ff0f"
+            android:layout_marginRight="20dp"
             android:layout_weight="1" />
     </LinearLayout>
 

@@ -200,9 +200,9 @@ public class WriteView extends SurfaceView implements
         Log.d("原始","打印屏幕的高度"+screenHeight+"屏幕的宽度:"+screenWidth);
         //screenWidth>screenHeight
 
-        DEFAULT_TEXT_SIZE = screenHeight * 3 / 8;//screenHeight*3/8
+        DEFAULT_TEXT_SIZE = screenWidth * 3 / 4;//screenHeight * 3 / 8;
         DEFAULT_START_X = screenWidth / 8;//1
-        DEFAULT_START_Y = screenHeight / 3;//1/3
+        DEFAULT_START_Y = screenHeight / 2;//1/3
         Log.d("原始","打印经过计算之后的屏幕的X坐标"+DEFAULT_START_X+"屏幕的Y坐标:"+DEFAULT_START_Y);
 
         Log.i("2DEFAULT_TEXT_SIZE:",DEFAULT_TEXT_SIZE+"");
@@ -225,12 +225,8 @@ public class WriteView extends SurfaceView implements
                 SRC_XINGKAI_FONT);
 
         initPaint();
-
         initCoordinate();
-
-//        setBackgroundColor(Color.YELLOW);
-
-
+        //setBackgroundColor(Color.YELLOW);
     }
 
     /**
@@ -328,8 +324,6 @@ public class WriteView extends SurfaceView implements
      */
     private void drawText(String drawText, Canvas canvas) {
         canvas.drawText(drawText, DEFAULT_START_X, DEFAULT_START_Y, textPaint);
-        canvas.drawText(drawText, DEFAULT_START_X+400, DEFAULT_START_Y, textPaint);
-        canvas.drawText(drawText, DEFAULT_START_X+800, DEFAULT_START_Y, textPaint);
     }
 
     private void penDraw(Canvas canvas) {
@@ -493,6 +487,9 @@ public class WriteView extends SurfaceView implements
             while (isRunning) {
                 String curWord = PractiseOriginalActivity.getCurWord();
                 canvas = surfaceHolder.lockCanvas();
+                if (canvas == null) {
+                    return;
+                }
                 // 将画布设置为白色
                 paintWhite(canvas);
                 // 描线
