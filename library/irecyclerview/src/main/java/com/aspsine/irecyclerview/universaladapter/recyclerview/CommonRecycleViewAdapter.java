@@ -62,26 +62,22 @@ public abstract class CommonRecycleViewAdapter<T> extends RecyclerView.Adapter<V
     }
 
     @Override
-    public ViewHolderHelper onCreateViewHolder(final ViewGroup parent, int viewType)
-    {
+    public ViewHolderHelper onCreateViewHolder(final ViewGroup parent, int viewType) {
         ViewHolderHelper viewHolder = ViewHolderHelper.get(mContext, null, parent, mLayoutId, -1);
         setListener(parent, viewHolder, viewType);
         return viewHolder;
     }
 
-    protected int getPosition(RecyclerView.ViewHolder viewHolder)
-    {
+    protected int getPosition(RecyclerView.ViewHolder viewHolder) {
         return viewHolder.getAdapterPosition();
     }
 
-    protected boolean isEnabled(int viewType)
-    {
+    protected boolean isEnabled(int viewType) {
         return true;
     }
 
 
-    protected void setListener(final ViewGroup parent, final ViewHolderHelper viewHolder, int viewType)
-    {
+    protected void setListener(final ViewGroup parent, final ViewHolderHelper viewHolder, int viewType) {
         if (!isEnabled(viewType)) return;
         viewHolder.getConvertView().setOnClickListener(new View.OnClickListener()
         {
@@ -139,7 +135,7 @@ public abstract class CommonRecycleViewAdapter<T> extends RecyclerView.Adapter<V
                 }
                 for (Animator anim : animation.getAnimators(holder.itemView)) {
                     startAnim(anim, holder.getLayoutPosition());
-                    Log.d("animline",mLastPosition+"");
+                    Log.d("animline", mLastPosition+"");
                 }
                 mLastPosition = holder.getLayoutPosition();
             }

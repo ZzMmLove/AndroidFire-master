@@ -1,0 +1,1179 @@
+{"attr": [
+  {
+    "key": "年级",
+    "vals": [
+      {
+        "id": "632",
+        "isCheck": "fase",
+        "val": "三年级上",
+        "type":"class"
+      },
+      {
+        "id": "631",
+        "isCheck": "fase",
+        "val": "三年级下",
+        "type":"class"
+      },
+      {
+        "id": "630",
+        "isCheck": "fase",
+        "val": "四年级上",
+        "type":"class"
+      },
+      {
+        "id": "629",
+        "isCheck": "fase",
+        "val": "四年级下",
+        "type":"class"
+      },
+      {
+        "id": "628",
+        "isCheck": "fase",
+        "val": "五年级上",
+        "type":"class"
+      },
+      {
+        "id": "627",
+        "isCheck": "fase",
+        "val": "五年级下",
+        "type":"class"
+      },
+      {
+        "id": "626",
+        "isCheck": "fase",
+        "val": "六年级上",
+        "type":"class"
+      },
+      {
+        "id": "625",
+        "isCheck": "fase",
+        "val": "六年级下",
+        "type":"class"
+      },
+      {
+        "id": "624",
+        "isCheck": "fase",
+        "val": "七年级上",
+        "type":"class"
+      },
+      {
+        "id": "623",
+        "isCheck": "fase",
+        "val": "七年级下",
+        "type":"class"
+      },
+      {
+        "id": "622",
+        "isCheck": "fase",
+        "val": "八年级上",
+        "type":"class"
+      },
+      {
+        "id": "621",
+        "isCheck": "fase",
+        "val": "八年级下",
+        "type":"class"
+      },
+      {
+        "id": "620",
+        "isCheck": "fase",
+        "val": "九年级上",
+        "type":"class"
+      },
+      {
+        "id": "619",
+        "isCheck": "fase",
+        "val": "九年级下",
+        "type":"class"
+      }
+    ]
+  },
+  {
+    "key": "笔画",
+    "vals": [
+      {
+        "id": "431",
+        "isCheck": "fase",
+        "val": "左点",
+        "type":"bihua"
+      },
+      {
+        "id": "432",
+        "isCheck": "fase",
+        "val": "仰点",
+        "type":"bihua"
+      },
+      {
+        "id": "433",
+        "isCheck": "fase",
+        "val": "撇点",
+        "type":"bihua"
+      },
+      {
+        "id": "434",
+        "isCheck": "fase",
+        "val": "挑点",
+        "type":"bihua"
+      },
+      {
+        "id": "435",
+        "isCheck": "fase",
+        "val": "长横",
+        "type":"bihua"
+      },
+      {
+        "id": "436",
+        "isCheck": "fase",
+        "val": "短横",
+        "type":"bihua"
+      },
+      {
+        "id": "437",
+        "isCheck": "fase",
+        "val": "提横",
+        "type":"bihua"
+      },
+      {
+        "id": "438",
+        "isCheck": "fase",
+        "val": "垂露竖",
+        "type":"bihua"
+      },
+      {
+        "id": "439",
+        "isCheck": "fase",
+        "val": "悬针竖",
+        "type":"bihua"
+      },
+      {
+        "id": "440",
+        "isCheck": "fase",
+        "val": "短竖",
+        "type":"bihua"
+      },
+      {
+        "id": "441",
+        "isCheck": "fase",
+        "val": "短撇",
+        "type":"bihua"
+      },
+      {
+        "id": "442",
+        "isCheck": "fase",
+        "val": "长撇"
+      },
+      {
+        "id": "443",
+        "isCheck": "fase",
+        "val": "竖撇",
+        "type":"bihua"
+      },
+      {
+        "id": "444",
+        "isCheck": "fase",
+        "val": "平捺",
+        "type":"bihua"
+      },
+      {
+        "id": "445",
+        "isCheck": "fase",
+        "val": "反捺",
+        "type":"bihua"
+      },
+      {
+        "id": "446",
+        "isCheck": "fase",
+        "val": "斜钩",
+        "type":"bihua"
+      },
+      {
+        "id": "447",
+        "isCheck": "fase",
+        "val": "卧钩",
+        "type":"bihua"
+      },
+      {
+        "id": "448",
+        "isCheck": "fase",
+        "val": "竖弯",
+        "type":"bihua"
+      },
+      {
+        "id": "449",
+        "isCheck": "fase",
+        "val": "竖弯钩",
+        "type":"bihua"
+      },
+      {
+        "id": "450",
+        "isCheck": "fase",
+        "val": "横折",
+        "type":"bihua"
+      },
+      {
+        "id": "451",
+        "isCheck": "fase",
+        "val": "横撇",
+        "type":"bihua"
+      },
+      {
+        "id": "452",
+        "isCheck": "fase",
+        "val": "横折钩",
+        "type":"bihua"
+      },
+      {
+        "id": "453",
+        "isCheck": "fase",
+        "val": "竖折折钩",
+        "type":"bihua"
+      },
+      {
+        "id": "454",
+        "isCheck": "fase",
+        "val": "横撇弯钩",
+        "type":"bihua"
+      },
+      {
+        "id": "456",
+        "isCheck": "fase",
+        "val": "横折折撇",
+        "type":"bihua"
+      },
+      {
+        "id": "457",
+        "isCheck": "fase",
+        "val": "横折折钩",
+        "type":"bihua"
+      }
+    ]
+  },
+  {
+    "key": "偏旁",
+    "vals": [
+      {
+        "id": "458",
+        "isCheck": "fase",
+        "val": "人字头",
+        "type":"bianpang"
+      },
+      {
+        "id": "459",
+        "isCheck": "fase",
+        "val": "单人旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "460",
+        "isCheck": "fase",
+        "val": "双人旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "461",
+        "isCheck": "fase",
+        "val": "草字头",
+        "type":"bianpang"
+      },
+      {
+        "id": "462",
+        "isCheck": "fase",
+        "val": "竹字头",
+        "type":"bianpang"
+      },
+      {
+        "id": "463",
+        "isCheck": "fase",
+        "val": "山字头",
+        "type":"bianpang"
+      },
+      {
+        "id": "464",
+        "isCheck": "fase",
+        "val": "穴宝头",
+        "type":"bianpang"
+      },
+      {
+        "id": "465",
+        "isCheck": "fase",
+        "val": "宝盖头",
+        "type":"bianpang"
+      },
+      {
+        "id": "466",
+        "isCheck": "fase",
+        "val": "秃宝盖",
+        "type":"bianpang"
+      },
+      {
+        "id": "467",
+        "isCheck": "fase",
+        "val": "雨字头",
+        "type":"bianpang"
+      },
+      {
+        "id": "468",
+        "isCheck": "fase",
+        "val": "l两点水",
+        "type":"bianpang"
+      },
+      {
+        "id": "469",
+        "isCheck": "fase",
+        "val": "三点水",
+        "type":"bianpang"
+      },
+      {
+        "id": "470",
+        "isCheck": "fase",
+        "val": "提土旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "471",
+        "isCheck": "fase",
+        "val": "王字旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "472",
+        "isCheck": "fase",
+        "val": "提手旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "473",
+        "isCheck": "fase",
+        "val": "牛字旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "474",
+        "isCheck": "fase",
+        "val": "竖心旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "475",
+        "isCheck": "fase",
+        "val": "米字旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "476",
+        "isCheck": "fase",
+        "val": "口字旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "477",
+        "isCheck": "fase",
+        "val": "日字旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "478",
+        "isCheck": "fase",
+        "val": "月字旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "479",
+        "isCheck": "fase",
+        "val": "目字旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "480",
+        "isCheck": "fase",
+        "val": "页字旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "481",
+        "isCheck": "fase",
+        "val": "左耳旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "482",
+        "isCheck": "fase",
+        "val": "右耳旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "483",
+        "isCheck": "fase",
+        "val": "西字旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "484",
+        "isCheck": "fase",
+        "val": "言字旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "485",
+        "isCheck": "fase",
+        "val": "足字旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "486",
+        "isCheck": "fase",
+        "val": "女字旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "487",
+        "isCheck": "fase",
+        "val": "女字底",
+        "type":"bianpang"
+      },
+      {
+        "id": "488",
+        "isCheck": "fase",
+        "val": "纹丝旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "489",
+        "isCheck": "fase",
+        "val": "金字旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "490",
+        "isCheck": "fase",
+        "val": "食字旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "491",
+        "isCheck": "fase",
+        "val": "又字旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "492",
+        "isCheck": "fase",
+        "val": "反文旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "493",
+        "isCheck": "fase",
+        "val": "反犬旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "494",
+        "isCheck": "fase",
+        "val": "示字旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "495",
+        "isCheck": "fase",
+        "val": "斤字旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "496",
+        "isCheck": "fase",
+        "val": "立刀旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "497",
+        "isCheck": "fase",
+        "val": "单耳刀（单包耳）",
+        "type":"bianpang"
+      },
+      {
+        "id": "498",
+        "isCheck": "fase",
+        "val": "力字旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "499",
+        "isCheck": "fase",
+        "val": "佳字旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "500",
+        "isCheck": "fase",
+        "val": "见字旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "501",
+        "isCheck": "fase",
+        "val": "四点底",
+        "type":"bianpang"
+      },
+      {
+        "id": "502",
+        "isCheck": "fase",
+        "val": "心字底",
+        "type":"bianpang"
+      },
+      {
+        "id": "503",
+        "isCheck": "fase",
+        "val": "皿字底",
+        "type":"bianpang"
+      },
+      {
+        "id": "504",
+        "isCheck": "fase",
+        "val": "木字旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "505",
+        "isCheck": "fase",
+        "val": "木字底",
+        "type":"bianpang"
+      },
+      {
+        "id": "506",
+        "isCheck": "fase",
+        "val": "广字头",
+        "type":"bianpang"
+      },
+      {
+        "id": "507",
+        "isCheck": "fase",
+        "val": "户字头",
+        "type":"bianpang"
+      },
+      {
+        "id": "508",
+        "isCheck": "fase",
+        "val": "病字头",
+        "type":"bianpang"
+      },
+      {
+        "id": "509",
+        "isCheck": "fase",
+        "val": "建字底",
+        "type":"bianpang"
+      },
+      {
+        "id": "510",
+        "isCheck": "fase",
+        "val": "走之旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "511",
+        "isCheck": "fase",
+        "val": "走字旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "512",
+        "isCheck": "fase",
+        "val": "同字框",
+        "type":"bianpang"
+      },
+      {
+        "id": "513",
+        "isCheck": "fase",
+        "val": "门字框",
+        "type":"bianpang"
+      },
+      {
+        "id": "514",
+        "isCheck": "fase",
+        "val": "国字框",
+        "type":"bianpang"
+      },
+      {
+        "id": "515",
+        "isCheck": "fase",
+        "val": "医字框",
+        "type":"bianpang"
+      },
+      {
+        "id": "516",
+        "isCheck": "fase",
+        "val": "弓字旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "517",
+        "isCheck": "fase",
+        "val": "衣字旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "518",
+        "isCheck": "fase",
+        "val": "殳字旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "519",
+        "isCheck": "fase",
+        "val": "马字旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "520",
+        "isCheck": "fase",
+        "val": "鸟字旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "521",
+        "isCheck": "fase",
+        "val": "三撇儿",
+        "type":"bianpang"
+      },
+      {
+        "id": "522",
+        "isCheck": "fase",
+        "val": "巾字旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "523",
+        "isCheck": "fase",
+        "val": "子字旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "524",
+        "isCheck": "fase",
+        "val": "区字旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "525",
+        "isCheck": "fase",
+        "val": "l石字旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "526",
+        "isCheck": "fase",
+        "val": "山字旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "527",
+        "isCheck": "fase",
+        "val": "禾字旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "528",
+        "isCheck": "fase",
+        "val": "大字头",
+        "type":"bianpang"
+      },
+      {
+        "id": "529",
+        "isCheck": "fase",
+        "val": "大字底",
+        "type":"bianpang"
+      },
+      {
+        "id": "530",
+        "isCheck": "fase",
+        "val": "火字底",
+        "type":"bianpang"
+      },
+      {
+        "id": "531",
+        "isCheck": "fase",
+        "val": "火字旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "532",
+        "isCheck": "fase",
+        "val": "水字底",
+        "type":"bianpang"
+      },
+      {
+        "id": "533",
+        "isCheck": "fase",
+        "val": "口字底",
+        "type":"bianpang"
+      },
+      {
+        "id": "534",
+        "isCheck": "fase",
+        "val": "日字底",
+        "type":"bianpang"
+      },
+      {
+        "id": "535",
+        "isCheck": "fase",
+        "val": "画字框",
+        "type":"bianpang"
+      },
+      {
+        "id": "536",
+        "isCheck": "fase",
+        "val": "欠字旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "537",
+        "isCheck": "fase",
+        "val": "父字头",
+        "type":"bianpang"
+      },
+      {
+        "id": "538",
+        "isCheck": "fase",
+        "val": "春字头",
+        "type":"bianpang"
+      },
+      {
+        "id": "539",
+        "isCheck": "fase",
+        "val": "尚字头",
+        "type":"bianpang"
+      },
+      {
+        "id": "540",
+        "isCheck": "fase",
+        "val": "四字头",
+        "type":"bianpang"
+      },
+      {
+        "id": "541",
+        "isCheck": "fase",
+        "val": "虎字头",
+        "type":"bianpang"
+      },
+      {
+        "id": "542",
+        "isCheck": "fase",
+        "val": "气字头",
+        "type":"bianpang"
+      },
+      {
+        "id": "543",
+        "isCheck": "fase",
+        "val": "虫字旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "544",
+        "isCheck": "fase",
+        "val": "骨字旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "545",
+        "isCheck": "fase",
+        "val": "黑字旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "546",
+        "isCheck": "fase",
+        "val": "缶字旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "547",
+        "isCheck": "fase",
+        "val": "今字旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "548",
+        "isCheck": "fase",
+        "val": "革字旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "549",
+        "isCheck": "fase",
+        "val": "戈字旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "550",
+        "isCheck": "fase",
+        "val": "牙字旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "551",
+        "isCheck": "fase",
+        "val": "毛字旁",
+        "type":"bianpang"
+      },
+      {
+        "id": "552",
+        "isCheck": "fase",
+        "val": "八字头",
+        "type":"bianpang"
+      }
+    ]
+  },
+  {
+    "key": "结构",
+    "vals": [
+      {
+        "id": "559",
+        "isCheck": "fase",
+        "val": "全包围",
+        "type":"jiegou"
+      },
+      {
+        "id": "561",
+        "isCheck": "fase",
+        "val": "字扁",
+        "type":"jiegou"
+      },
+      {
+        "id": "562",
+        "isCheck": "fase",
+        "val": "字正",
+        "type":"jiegou"
+      },
+      {
+        "id": "563",
+        "isCheck": "fase",
+        "val": "字圆",
+        "type":"jiegou"
+      },
+      {
+        "id": "564",
+        "isCheck": "fase",
+        "val": "字大",
+        "type":"jiegou"
+      },
+      {
+        "id": "565",
+        "isCheck": "fase",
+        "val": "字小",
+        "type":"jiegou"
+      },
+      {
+        "id": "566",
+        "isCheck": "fase",
+        "val": "字斜",
+        "type":"jiegou"
+      },
+      {
+        "id": "567",
+        "isCheck": "fase",
+        "val": "字高",
+        "type":"jiegou"
+      },
+      {
+        "id": "568",
+        "isCheck": "fase",
+        "val": "字矮",
+        "type":"jiegou"
+      },
+      {
+        "id": "569",
+        "isCheck": "fase",
+        "val": "字窄",
+        "type":"jiegou"
+      },
+      {
+        "id": "570",
+        "isCheck": "fase",
+        "val": "下包上",
+        "type":"jiegou"
+      },
+      {
+        "id": "571",
+        "isCheck": "fase",
+        "val": "上包下",
+        "type":"jiegou"
+      },
+      {
+        "id": "572",
+        "isCheck": "fase",
+        "val": "左包右",
+        "type":"jiegou"
+      },
+      {
+        "id": "573",
+        "isCheck": "fase",
+        "val": "左上包",
+        "type":"jiegou"
+      },
+      {
+        "id": "574",
+        "isCheck": "fase",
+        "val": "右上包",
+        "type":"jiegou"
+      },
+      {
+        "id": "575",
+        "isCheck": "fase",
+        "val": "左下包",
+        "type":"jiegou"
+      },
+      {
+        "id": "576",
+        "isCheck": "fase",
+        "val": "上中宽下窄",
+        "type":"jiegou"
+      },
+      {
+        "id": "577",
+        "isCheck": "fase",
+        "val": "上中窄下宽",
+        "type":"jiegou"
+      },
+      {
+        "id": "578",
+        "isCheck": "fase",
+        "val": "中宽上下窄",
+        "type":"jiegou"
+      },
+      {
+        "id": "579",
+        "isCheck": "fase",
+        "val": "上窄中下宽",
+        "type":"jiegou"
+      },
+      {
+        "id": "580",
+        "isCheck": "fase",
+        "val": "中窄上下宽",
+        "type":"jiegou"
+      },
+      {
+        "id": "581",
+        "isCheck": "fase",
+        "val": "上中下相等",
+        "type":"jiegou"
+      },
+      {
+        "id": "582",
+        "isCheck": "fase",
+        "val": "上正下斜",
+        "type":"jiegou"
+      },
+      {
+        "id": "583",
+        "isCheck": "fase",
+        "val": "上斜下正",
+        "type":"jiegou"
+      },
+      {
+        "id": "584",
+        "isCheck": "fase",
+        "val": "上下等宽",
+        "type":"jiegou"
+      },
+      {
+        "id": "585",
+        "isCheck": "fase",
+        "val": "上长下短",
+        "type":"jiegou"
+      },
+      {
+        "id": "586",
+        "isCheck": "fase",
+        "val": "上短下长",
+        "type":"jiegou"
+      },
+      {
+        "id": "587",
+        "isCheck": "fase",
+        "val": "上下相等",
+        "type":"jiegou"
+      },
+      {
+        "id": "589",
+        "isCheck": "fase",
+        "val": "上下同字",
+        "type":"jiegou"
+      },
+      {
+        "id": "590",
+        "isCheck": "fase",
+        "val": "上开下合",
+        "type":"jiegou"
+      },
+      {
+        "id": "591",
+        "isCheck": "fase",
+        "val": "上合下开",
+        "type":"jiegou"
+      },
+      {
+        "id": "592",
+        "isCheck": "fase",
+        "val": "上合下分",
+        "type":"jiegou"
+      },
+      {
+        "id": "593",
+        "isCheck": "fase",
+        "val": "上分下合",
+        "type":"jiegou"
+      },
+      {
+        "id": "594",
+        "isCheck": "fase",
+        "val": "上宽下窄",
+        "type":"jiegou"
+      },
+      {
+        "id": "595",
+        "isCheck": "fase",
+        "val": "上窄下宽",
+        "type":"jiegou"
+      },
+      {
+        "id": "596",
+        "isCheck": "fase",
+        "val": "左窄中右宽",
+        "type":"jiegou"
+      },
+      {
+        "id": "597",
+        "isCheck": "fase",
+        "val": "左中窄右宽",
+        "type":"jiegou"
+      },
+      {
+        "id": "598",
+        "isCheck": "fase",
+        "val": "左右宽中窄",
+        "type":"jiegou"
+      },
+      {
+        "id": "599",
+        "isCheck": "fase",
+        "val": "左中右均",
+        "type":"jiegou"
+      },
+      {
+        "id": "600",
+        "isCheck": "fase",
+        "val": "左右穿插避让",
+        "type":"jiegou"
+      },
+      {
+        "id": "601",
+        "isCheck": "fase",
+        "val": "左右对称",
+        "type":"jiegou"
+      },
+      {
+        "id": "602",
+        "isCheck": "fase",
+        "val": "左高右低",
+        "type":"jiegou"
+      },
+      {
+        "id": "603",
+        "isCheck": "fase",
+        "val": "左右均等",
+        "type":"jiegou"
+      },
+      {
+        "id": "604",
+        "isCheck": "fase",
+        "val": "左短右长",
+        "type":"jiegou"
+      },
+      {
+        "id": "605",
+        "isCheck": "fase",
+        "val": "左长右短",
+        "type":"jiegou"
+      },
+      {
+        "id": "606",
+        "isCheck": "fase",
+        "val": "左窄右宽",
+        "type":"jiegou"
+      },
+      {
+        "id": "607",
+        "isCheck": "fase",
+        "val": "左宽右窄",
+        "type":"jiegou"
+      },
+      {
+        "id": "608",
+        "isCheck": "fase",
+        "val": "左斜右正",
+        "type":"jiegou"
+      },
+      {
+        "id": "609",
+        "isCheck": "fase",
+        "val": "斜抱穿插",
+        "type":"jiegou"
+      },
+      {
+        "id": "610",
+        "isCheck": "fase",
+        "val": "左收右放",
+        "type":"jiegou"
+      },
+      {
+        "id": "611",
+        "isCheck": "fase",
+        "val": "左放右收（左大右小）",
+        "type":"jiegou"
+      },
+      {
+        "id": "612",
+        "isCheck": "fase",
+        "val": "左小居上",
+        "type":"jiegou"
+      },
+      {
+        "id": "613",
+        "isCheck": "fase",
+        "val": "右小靠下",
+        "type":"jiegou"
+      },
+      {
+        "id": "614",
+        "isCheck": "fase",
+        "val": "左小右大",
+        "type":"jiegou"
+      },
+      {
+        "id": "615",
+        "isCheck": "fase",
+        "val": "左右相等",
+        "type":"jiegou"
+      },
+      {
+        "id": "616",
+        "isCheck": "fase",
+        "val": "左右同形",
+        "type":"jiegou"
+      },
+      {
+        "id": "617",
+        "isCheck": "fase",
+        "val": "左右穿插",
+        "type":"jiegou"
+      },
+      {
+        "id": "618",
+        "isCheck": "fase",
+        "val": "左右相背",
+        "type":"jiegou"
+      }
+    ]
+  }
+]}

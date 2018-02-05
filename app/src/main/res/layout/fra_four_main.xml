@@ -13,22 +13,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10.0dip"
-            android:layout_marginTop="10.0dip"
-            android:gravity="center_vertical"
-            android:paddingLeft="4.0dip"
-            android:text="我的设置"
-            android:textColor="#ff888888"
-            android:textSize="16.0sp" />
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -37,7 +26,7 @@
             android:orientation="vertical">
 
             <RelativeLayout
-                android:id="@+id/rl_account_manager"
+                android:id="@+id/rl_account_username"
                 android:layout_width="wrap_content"
                 android:layout_height="50dip"
                 android:layout_alignParentRight="true"
@@ -52,17 +41,18 @@
                     android:drawableLeft="@mipmap/settting_account"
                     android:drawablePadding="8dip"
                     android:paddingLeft="17.0dip"
-                    android:text="账号管理"
+                    android:text="名 字"
                     android:textColor="#353535"
                     android:textSize="16sp" />
 
-                <ImageView
+                <TextView
+                    android:id="@+id/tv_username"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
                     android:scaleType="matrix"
-                    android:src="@drawable/mm_submenu" />
+                    android:text="江骚雨"/>
             </RelativeLayout>
 
             <View
@@ -71,220 +61,7 @@
                 android:background="#dadada" />
 
             <RelativeLayout
-                android:id="@+id/rl_switch_collect"
-                android:layout_width="match_parent"
-                android:layout_height="50dip"
-                android:background="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                android:padding="10dip">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:drawableLeft="@mipmap/settting_collec"
-                    android:drawablePadding="8dip"
-                    android:paddingLeft="17.0dip"
-                    android:text="我的收藏"
-                    android:textColor="#353535"
-                    android:textSize="16sp" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerVertical="true"
-                    android:clickable="true"
-                    android:scaleType="matrix"
-                    android:src="@drawable/mm_submenu" />
-            </RelativeLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0.1dp"
-                android:background="#dadada" />
-
-            <RelativeLayout
-                android:id="@+id/rl_history"
-                android:layout_width="match_parent"
-                android:layout_height="50dip"
-                android:background="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                android:padding="10dip">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:drawableLeft="@mipmap/settting_record"
-                    android:drawablePadding="8dip"
-                    android:paddingLeft="17.0dip"
-                    android:text="浏览记录"
-                    android:textColor="#353535"
-                    android:textSize="16sp" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerVertical="true"
-                    android:scaleType="matrix"
-                    android:src="@drawable/mm_submenu" />
-            </RelativeLayout>
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10.0dip"
-            android:layout_marginTop="10.0dip"
-            android:gravity="center_vertical"
-            android:paddingLeft="4.0dip"
-            android:text="客户端"
-            android:textColor="#ff888888"
-            android:textSize="16.0sp" />
-
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:background="#ffffff"
-            android:orientation="vertical">
-
-            <RelativeLayout
-                android:id="@+id/rl_switch_cache"
-                android:layout_width="match_parent"
-                android:layout_height="50dip"
-                android:background="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                android:padding="10dip">
-
-                <TextView
-                    android:id="@+id/tv_cache"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:drawableLeft="@mipmap/settting_clear"
-                    android:drawablePadding="8dip"
-                    android:paddingLeft="17.0dip"
-                    android:text="清空缓存"
-                    android:textColor="#353535"
-                    android:textSize="16sp" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerVertical="true"
-                    android:scaleType="matrix"
-                    android:src="@drawable/mm_submenu" />
-            </RelativeLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0.1dp"
-                android:background="#dadada" />
-
-            <RelativeLayout
-                android:id="@+id/rl_feedback"
-                android:layout_width="match_parent"
-                android:layout_height="50dip"
-                android:background="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                android:padding="10dip">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:drawableLeft="@mipmap/settting_feedback"
-                    android:drawablePadding="8dip"
-                    android:paddingLeft="17.0dip"
-                    android:text="意见反馈"
-                    android:textColor="#353535"
-                    android:textSize="16sp" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerVertical="true"
-                    android:scaleType="matrix"
-                    android:src="@drawable/mm_submenu" />
-            </RelativeLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0.1dp"
-                android:background="#dadada" />
-
-            <RelativeLayout
-                android:id="@+id/rl_shared"
-                android:layout_width="match_parent"
-                android:layout_height="50dip"
-                android:background="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                android:padding="10dip">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:drawableLeft="@mipmap/settting_share"
-                    android:drawablePadding="8dip"
-                    android:paddingLeft="17.0dip"
-                    android:text="分享给好友"
-                    android:textColor="#353535"
-                    android:textSize="16sp" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerVertical="true"
-                    android:scaleType="matrix"
-                    android:src="@drawable/mm_submenu" />
-            </RelativeLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0.1dp"
-                android:background="#dadada" />
-
-            <RelativeLayout
-                android:id="@+id/rl_update"
-                android:layout_width="match_parent"
-                android:layout_height="50dip"
-                android:background="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                android:padding="10dip">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:drawableLeft="@mipmap/settting_update"
-                    android:drawablePadding="8dip"
-                    android:paddingLeft="17.0dip"
-                    android:text="检测更新"
-                    android:textColor="#353535"
-                    android:textSize="16sp" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerVertical="true"
-                    android:scaleType="matrix"
-                    android:src="@drawable/mm_submenu" />
-            </RelativeLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0.1dp"
-                android:background="#dadada" />
-
-            <RelativeLayout
-                android:id="@+id/rl_switch_about"
+                android:id="@+id/rl_switch_nickname"
                 android:layout_width="match_parent"
                 android:layout_height="50dip"
                 android:background="?android:attr/selectableItemBackground"
@@ -298,17 +75,19 @@
                     android:drawableLeft="@mipmap/settting_about"
                     android:drawablePadding="8dip"
                     android:paddingLeft="17.0dip"
-                    android:text="关于"
+                    android:text="昵 称"
                     android:textColor="#353535"
                     android:textSize="16sp" />
 
-                <ImageView
+                <TextView
+                    android:id="@+id/tv_nickname"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
+                    android:clickable="true"
                     android:scaleType="matrix"
-                    android:src="@drawable/mm_submenu" />
+                    android:text="哈撒给"/>
             </RelativeLayout>
 
             <View
@@ -316,9 +95,252 @@
                 android:layout_height="0.1dp"
                 android:background="#dadada" />
 
+            <RelativeLayout
+                android:id="@+id/rl_sex"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:padding="10dip">
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@mipmap/settting_about"
+                    android:drawablePadding="8dip"
+                    android:paddingLeft="17.0dip"
+                    android:text="性 别"
+                    android:textColor="#353535"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="matrix"
+                    android:text="女" />
+            </RelativeLayout>
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical">
 
+            <RelativeLayout
+                android:id="@+id/rl_switch_type"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:padding="10dip">
+
+                <TextView
+                    android:id="@+id/tv_cache"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@mipmap/settting_about"
+                    android:drawablePadding="8dip"
+                    android:paddingLeft="17.0dip"
+                    android:text="身 份"
+                    android:textColor="#353535"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="matrix"
+                    android:text="学生" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#dadada" />
+
+            <RelativeLayout
+                android:id="@+id/rl_control_school"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:padding="10dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@mipmap/settting_about"
+                    android:drawablePadding="8dip"
+                    android:paddingLeft="17.0dip"
+                    android:text="学 校"
+                    android:textColor="#353535"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_school"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="matrix"
+                    android:text="中山大学" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#dadada" />
+
+            <RelativeLayout
+                android:id="@+id/rl_class"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:padding="10dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@mipmap/settting_about"
+                    android:drawablePadding="8dip"
+                    android:paddingLeft="17.0dip"
+                    android:text="班 级"
+                    android:textColor="#353535"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_class"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="matrix"
+                    android:text="初一10班" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#dadada" />
+
+            <RelativeLayout
+                android:id="@+id/rl_email"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:padding="10dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@mipmap/settting_about"
+                    android:drawablePadding="8dip"
+                    android:paddingLeft="17.0dip"
+                    android:text="邮 箱"
+                    android:textColor="#353535"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="matrix"
+                    android:text="1525011@qq.com"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#dadada" />
+
+            <RelativeLayout
+                android:id="@+id/rl_switch_address"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:padding="10dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@mipmap/settting_about"
+                    android:drawablePadding="8dip"
+                    android:paddingLeft="17.0dip"
+                    android:text="地 址"
+                    android:textColor="#353535"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="matrix"
+                    android:text="东莞" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#dadada" />
+
+            <RelativeLayout
+                android:id="@+id/rl_remark"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:padding="10dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@mipmap/settting_about"
+                    android:drawablePadding="8dip"
+                    android:paddingLeft="17.0dip"
+                    android:text="简 介"
+                    android:textColor="#353535"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_remark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="matrix"
+                    android:text="简介" />
+            </RelativeLayout>
+
+        </LinearLayout>
     </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_pos"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:text="确 定"
+        android:visibility="gone"
+        android:background="@drawable/bg_userinfo"/>
+
 </LinearLayout>

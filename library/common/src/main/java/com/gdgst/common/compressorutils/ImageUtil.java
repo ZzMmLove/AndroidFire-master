@@ -17,11 +17,7 @@ import java.io.IOException;
 /**
  * 图像util
  */
-class ImageUtil {
-
-    private ImageUtil() {
-
-    }
+public class ImageUtil {
 
     /**
      * 获取压缩后bitmap
@@ -31,7 +27,7 @@ class ImageUtil {
      * @param maxHeight
      * @return
      */
-    static Bitmap getScaledBitmap(Context context, Uri imageUri, float maxWidth, float maxHeight) {
+    public static Bitmap getScaledBitmap(Context context, Uri imageUri, float maxWidth, float maxHeight) {
         String filePath = FileUtil.getRealPathFromURI(context, imageUri);
         Bitmap scaledBitmap = null;
 
@@ -45,7 +41,7 @@ class ImageUtil {
         int actualHeight = options.outHeight;
         int actualWidth = options.outWidth;
 
-        float imgRatio = (float)actualWidth / actualHeight;
+        float imgRatio = (float)actualWidth / actualHeight;  //缩放比例
         float maxRatio = maxWidth / maxHeight;
 
         //width and height values are set maintaining the aspect ratio of the image

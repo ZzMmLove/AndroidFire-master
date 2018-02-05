@@ -1,33 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:custom="http://schemas.android.com/apk/res/com.jaydenxiao.androidfire.ui.main.view"
-        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical" >
 
-        <com.gdgst.common.commonwidget.NormalTitleBar
-            android:id="@+id/fra_practise_NormalTitleBar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+    <com.gdgst.common.commonwidget.NormalTitleBar
+        android:id="@+id/fra_practise_NormalTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
 
-            <!-- got a view here for handwriting -->
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <!--<com.jaydenxiao.androidfire.ui.main.view.PractiseWriteView
-                android:id="@+id/practise_write_view"
-                    android:layout_width="fill_parent"
-                    android:layout_height="450dp"
-                android:layout_weight="1" />-->
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="15dp">
+                android:layout_marginTop="5dp"
+                android:background="@drawable/item_news_imageview_bg">
+
+                <TextView
+                    android:text="练字文章："
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView01"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:text="请选择"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/fra_practise_textview_chioce"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:paddingRight="15dp"
+                    android:gravity="center_vertical|right"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/item_news_imageview_bg">
+
+                <TextView
+                    android:text="选择字体："
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:text="请选择"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/fra_practise_textview_fonts"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:paddingRight="15dp"
+                    android:gravity="center_vertical|right"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/item_news_imageview_bg">
+
+                <TextView
+                    android:text="笔画大小："
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:text="请选择"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/fra_practise_textview_paintsize"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:paddingRight="15dp"
+                    android:gravity="center_vertical|right"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/item_news_imageview_bg">
 
                 <TextView
                     android:text="历史练字记录:"
@@ -50,7 +129,9 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="45dp">
+                android:layout_height="45dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/item_news_imageview_bg">
 
                 <TextView
                     android:text="今天练字记录:"
@@ -71,10 +152,13 @@
             </LinearLayout>
         </LinearLayout>
 
-    <LinearLayout
+            <!-- got a view here for handwriting -->
+
+        <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
 
         <Button
             android:text="6字帖练习"
@@ -82,7 +166,7 @@
             android:layout_height="80dp"
             android:id="@+id/fra_practise_button_sixWordPractise"
             android:layout_margin="20dp"
-            android:background="#ff0"
+            android:background="@drawable/selector_button_bg"
             android:layout_gravity="center_horizontal"
             android:layout_weight="1" />
 
@@ -92,7 +176,7 @@
             android:layout_height="80dp"
             android:id="@+id/fra_practise_button_nineWordPractise"
             android:layout_weight="1"
-            android:background="#ff00"
+            android:background="@drawable/selector_button_bg"
             android:layout_marginRight="20dp"/>
 
         <Button
@@ -100,7 +184,7 @@
             android:layout_width="wrap_content"
             android:layout_height="80dp"
             android:id="@+id/fra_practise_Button_original"
-            android:background="#ff0f"
+            android:background="@drawable/selector_button_bg"
             android:layout_marginRight="20dp"
             android:layout_weight="1" />
     </LinearLayout>

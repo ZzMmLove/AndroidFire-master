@@ -50,7 +50,7 @@ public class LoadingTip extends LinearLayout {
         initView(context);
     }
 
-    //分为服务器失败，网络加载失败、数据为空、加载中、完成四种状态
+    //枚举类型分为服务器失败，网络加载失败、数据为空、加载中、完成四种状态
     public static enum LoadStatus {
         sereverError,error, empty, loading,finish
     }

@@ -2,15 +2,15 @@
 <resources>
     <!--视频频道-->
     <string-array name="video_channel_name">
-        <item>热点</item>
-        <item>搞笑</item>
-        <item>娱乐</item>
-        <item>精品</item>
+        <item>视频教学</item>
+       <!--<item>颜体</item>-->
+        <!--<item>底阶</item>-->
+        <!--<item>精品</item>-->
     </string-array>
     <string-array name="video_channel_id">
-        <item>V9LG4B3A0</item>
-        <item>V9LG4E6VR</item>
-        <item>V9LG4CHOR</item>
-        <item>00850FRB</item>
+        <item>407</item>
+        <!--<item>408</item>-->
+        <!--<item>409</item>-->
+        <!--<item>410</item>-->
     </string-array>
 </resources>

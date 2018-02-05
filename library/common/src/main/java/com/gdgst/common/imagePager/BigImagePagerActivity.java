@@ -45,8 +45,8 @@ public class BigImagePagerActivity extends BaseActivity{
         intent.putStringArrayListExtra(INTENT_IMGURLS, new ArrayList<String>(imgUrls));
         intent.putExtra(INTENT_POSITION, position);
         activity.startActivity(intent);
-        activity.overridePendingTransition(R.anim.fade_in,
-                R.anim.fade_out);
+        //当Activity退出或者是进入的时候设置一个动画
+        activity.overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
     }
     /**
      * 监听返回键
@@ -121,8 +121,7 @@ public class BigImagePagerActivity extends BaseActivity{
                 View view = new View(this);
                 view.setBackgroundResource(R.drawable.selector_guide_bg);
                 view.setSelected(i==startPos ? true : false);
-                LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(getResources().getDimensionPixelSize(R.dimen.gudieview_width),
-                        getResources().getDimensionPixelSize(R.dimen.gudieview_heigh));
+                LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(getResources().getDimensionPixelSize(R.dimen.gudieview_width), getResources().getDimensionPixelSize(R.dimen.gudieview_heigh));
                 layoutParams.setMargins(10, 0, 0, 0);
                 guideGroup.addView(view, layoutParams);
                 guideViewList.add(view);

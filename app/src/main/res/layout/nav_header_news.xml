@@ -1,34 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="200dp"
-              android:background="@drawable/onepiece"
-              android:gravity="bottom"
-              android:orientation="vertical"
-              android:paddingBottom="@dimen/activity_vertical_margin"
-              android:paddingLeft="@dimen/activity_horizontal_margin"
-              android:paddingRight="@dimen/activity_horizontal_margin"
-              android:paddingTop="@dimen/activity_vertical_margin"
-              android:theme="@style/ThemeOverlay.AppCompat.Dark">
+<android.support.v7.widget.CardView
+    style="@style/news_summary_card_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardElevation="2dp"
+    app:cardCornerRadius="8dp"
+    >
 
-<!--    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingTop="@dimen/nav_header_vertical_spacing"
-        android:src="@android:drawable/sym_def_app_icon"/>-->
-<!--
-    <TextView
+    <RelativeLayout
+        android:id="@+id/rl_root"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="?attr/dayNightBackgroundDrawable"
+        app:dayNightBackgroundAttr="dayNightBackgroundDrawable"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="@dimen/nav_header_vertical_spacing"
-        android:text="咖枯"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>-->
+        android:padding="10dp">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="迷茫着、探索着、一路走来。。。"/>
+        <TextView
+            android:id="@+id/history_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/news_summary_photo_iv"
+            android:layout_marginRight="@dimen/item_margin"
+            android:layout_toRightOf="@+id/news_summary_photo_iv"
+            android:lines="2"
+            android:textColor="?attr/dayNightOneTextColor"
+            app:dayNightOneTextColorAttr="dayNightOneTextColor"
+            android:textSize="@dimen/font_normal"
+            tools:text="习近平:吹响建设科技强国号角国号角国号角"/>
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/history_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/history_name"
+            android:layout_marginRight="@dimen/item_margin"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/news_summary_photo_iv"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="?attr/dayNightTwoTextColor"
+            app:dayNightTwoTextColorAttr="dayNightTwoTextColor"
+            android:textSize="@dimen/font_small"
+            tools:text="科技是国之利器"/>
+
+        <TextView
+            android:id="@+id/history_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/history_type"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="@dimen/item_margin"
+            android:textColor="?attr/dayNightTwoTextColor"
+            app:dayNightTwoTextColorAttr="dayNightTwoTextColor"
+            android:textSize="@dimen/font_tiny"
+            tools:text="05-28 20:09"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

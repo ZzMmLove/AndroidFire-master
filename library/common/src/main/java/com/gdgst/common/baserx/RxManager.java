@@ -1,5 +1,7 @@
 package com.gdgst.common.baserx;
 
+import com.gdgst.common.commonutils.ToastUitl;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -11,14 +13,13 @@ import rx.subscriptions.CompositeSubscription;
 
 /**
  * 用于管理单个presenter的RxBus的事件和Rxjava相关代码的生命周期处理
- * Created by xsf
- * on 2016.08.14:50
+ *
  */
 public class RxManager {
     public RxBus mRxBus = RxBus.getInstance();
     //管理rxbus订阅
     private Map<String, Observable<?>> mObservables = new HashMap<>();
-    /*管理Observables 和 Subscribers订阅*/
+    /*管理Observables 和 Subscribers订阅,这个类的方法都是线程安全的*/
     private CompositeSubscription mCompositeSubscription = new CompositeSubscription();
 
     /**
@@ -41,11 +42,11 @@ public class RxManager {
 
     /**
      * 单纯的Observables 和 Subscribers管理
-     * @param m
+     * @param subscription
      */
-    public void add(Subscription m) {
+    public void add(Subscription subscription) {
         /*订阅管理*/
-        mCompositeSubscription.add(m);
+        mCompositeSubscription.add(subscription);
     }
     /**
      * 单个presenter生命周期结束，取消订阅和所有rxbus观察

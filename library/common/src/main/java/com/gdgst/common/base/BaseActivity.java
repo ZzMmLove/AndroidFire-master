@@ -16,6 +16,7 @@ import com.gdgst.common.baserx.RxManager;
 import com.gdgst.common.commonutils.TUtil;
 import com.gdgst.common.commonutils.ToastUitl;
 import com.gdgst.common.commonwidget.LoadingDialog;
+import com.gdgst.common.commonwidget.LoadingTip;
 import com.gdgst.common.commonwidget.StatusBarCompat;
 import com.gdgst.common.daynightmodeutils.ChangeModeController;
 import com.umeng.analytics.MobclickAgent;
@@ -69,10 +70,10 @@ public abstract class BaseActivity<T extends BasePresenter, E extends BaseModel>
     public Context mContext;
     public RxManager mRxManager;
 
-        @Override
+    @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mRxManager=new RxManager();
+        mRxManager = new RxManager();
         doBeforeSetcontentView();
         setContentView(getLayoutId());
         ButterKnife.bind(this);
@@ -121,7 +122,7 @@ public abstract class BaseActivity<T extends BasePresenter, E extends BaseModel>
      * 着色状态栏（4.4以上系统有效）
      */
     protected void SetStatusBarColor(){
-        StatusBarCompat.setStatusBarColor(this, ContextCompat.getColor(this,R.color.main_color));
+        StatusBarCompat.setStatusBarColor(this, ContextCompat.getColor(this,R.color.skyblue));
     }
     /**
      * 着色状态栏（4.4以上系统有效）

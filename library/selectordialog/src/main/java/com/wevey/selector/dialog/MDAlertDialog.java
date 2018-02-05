@@ -13,6 +13,7 @@ import android.widget.TextView;
 import com.weavey.utils.ScreenSizeUtils;
 
 /**
+ *
  * Created by Weavey on 2016/9/4.
  */
 public class MDAlertDialog implements View.OnClickListener {

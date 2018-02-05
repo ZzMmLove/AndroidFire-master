@@ -5,19 +5,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     app:cardElevation="2dp"
+    app:cardCornerRadius="8dp"
     >
     <!--app:cardCornerRadius="2dp"-->
     <!--app:contentPadding="0dp"-->
-
+    <!--android:background="?attr/dayNightBackground"-->
     <RelativeLayout
         android:id="@+id/rl_root"
         xmlns:android="http://schemas.android.com/apk/res/android"
-        android:background="?attr/dayNightBackground"
-        app:dayNightBackgroundAttr="dayNightBackground"
+        android:background="?attr/dayNightBackgroundDrawable"
+        app:dayNightBackgroundAttr="dayNightBackgroundDrawable"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <ImageView
+        <com.gdgst.shuoke360.ui.main.view.RoundAngleImageView
             android:id="@+id/news_summary_photo_iv"
             android:layout_width="72dp"
             android:layout_height="72dp"

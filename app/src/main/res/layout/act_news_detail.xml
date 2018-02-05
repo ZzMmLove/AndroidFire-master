@@ -14,6 +14,7 @@
         android:fitsSystemWindows="true"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
+        <!--折叠式的头部toolbarLayout-->
         <android.support.design.widget.CollapsingToolbarLayout
             android:id="@+id/toolbar_layout"
             android:layout_width="match_parent"
@@ -58,8 +59,6 @@
         </android.support.design.widget.CollapsingToolbarLayout>
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/item_content_news_detail"/>
-
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
@@ -70,5 +69,7 @@
         app:layout_anchor="@id/app_bar"
         app:backgroundTint="@color/red"
         app:layout_anchorGravity="bottom|end"/>
+
+   <include layout="@layout/item_content_news_detail" />
     <!--app:backgroundTint="?attr/fabColor"-->
 </android.support.design.widget.CoordinatorLayout>

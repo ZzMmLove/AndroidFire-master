@@ -23,6 +23,7 @@ import com.aspsine.irecyclerview.widget.LoadMoreFooterView;
 import com.gdgst.common.commonutils.LogUtils;
 
 /**
+ *
  * Created by aspsine on 16/3/3.
  */
 public class IRecyclerView extends RecyclerView {
@@ -130,7 +131,7 @@ public class IRecyclerView extends RecyclerView {
 
     /**
      * 设置是否支持下拉刷新 默认：支持
-     * @param enabled
+     * @param enabled 是否可以刷新
      */
     public void setRefreshEnabled(boolean enabled) {
         this.mRefreshEnabled = enabled;
@@ -138,7 +139,7 @@ public class IRecyclerView extends RecyclerView {
 
     /**
      * 设置是否支持上拉加载更多 默认：支持
-     * @param enabled
+     * @param enabled 是否可以加载更多
      */
     public void setLoadMoreEnabled(boolean enabled) {
         this.mLoadMoreEnabled = enabled;
@@ -172,7 +173,7 @@ public class IRecyclerView extends RecyclerView {
 
     /**
      * 设置刷新监听
-     * @param listener
+     * @param listener 监听器
      */
     public void setOnRefreshListener(OnRefreshListener listener) {
         this.mOnRefreshListener = listener;
@@ -180,7 +181,7 @@ public class IRecyclerView extends RecyclerView {
 
     /**
      * 设置加载更多监听
-     * @param listener
+     * @param listener 加载更多监听器
      */
     public void setOnLoadMoreListener(OnLoadMoreListener listener) {
         this.mOnLoadMoreListener = listener;
@@ -188,7 +189,7 @@ public class IRecyclerView extends RecyclerView {
 
     /**
      * 设置刷新状态
-     * @param refreshing
+     * @param refreshing 是否正在刷新
      */
     public void setRefreshing(boolean refreshing) {
         if (mStatus == STATUS_DEFAULT && refreshing) {

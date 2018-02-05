@@ -18,4 +18,11 @@
             <flag name="right" value="5"/>
         </attr>
     </declare-styleable>
+
+    <!--圆角ImageView    -->
+        <declare-styleable name="RoundAngleImageView">
+            <attr name="roundWidth" format="dimension" />
+            <attr name="roundHeight" format="dimension" />
+        </declare-styleable>
+
 </resources>

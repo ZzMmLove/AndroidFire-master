@@ -10,24 +10,86 @@
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/main_color"
+        android:background="@drawable/main_color"
         android:theme="@style/AppTheme.AppBarOverlay">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/main_color"
+            android:background="@drawable/main_color"
             android:orientation="horizontal">
             <android.support.design.widget.TabLayout
                 android:id="@+id/tabs"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 app:tabIndicatorColor="@color/white"
-                app:tabBackground="@color/main_color"
+                app:tabBackground="@drawable/main_color"
                 android:layout_weight="1">
             </android.support.design.widget.TabLayout>
         </LinearLayout>
 
+        <LinearLayout
+            android:id="@+id/ll_fenlei"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_nianji"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="年 级"
+                android:gravity="center|center_vertical"
+                android:layout_margin="5dp"
+                android:textSize="16sp"
+                android:background="@drawable/bg_vedio_fenlei"
+                android:drawableRight="@drawable/down"
+                android:textColor="@color/white_light"
+                android:drawablePadding="0dp"
+                android:clickable="true"/>
+            <TextView
+                android:id="@+id/tv_bihua"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="笔 画"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:textSize="16sp"
+                android:textColor="@color/white_light"
+                android:background="@drawable/bg_vedio_fenlei"
+                android:drawableRight="@drawable/down"
+                android:clickable="true"/>
+            <TextView
+                android:id="@+id/tv_pianpang"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="偏 旁"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:textSize="16sp"
+                android:background="@drawable/bg_vedio_fenlei"
+                android:textColor="@color/white_light"
+                android:drawableRight="@drawable/down"
+                android:clickable="true"/>
+            <TextView
+                android:id="@+id/tv_jiegou"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="结 构"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:textSize="16sp"
+                android:background="@drawable/bg_vedio_fenlei"
+                android:textColor="@color/white_light"
+                android:drawableRight="@drawable/down"
+                android:clickable="true"/>
+        </LinearLayout>
+
     </android.support.design.widget.AppBarLayout>
+
 
     <android.support.v4.view.ViewPager
         android:id="@+id/view_pager"
@@ -44,6 +106,6 @@
         android:layout_margin="@dimen/fab_margin"
         app:backgroundTint="@color/main_color"
         android:src="@drawable/ic_arrow_upward"
-        app:layout_behavior="com.gdgst.androidfire.widget.ScrollAwareFABBehavior"/>
+        app:layout_behavior="com.gdgst.shuoke360.widget.ScrollAwareFABBehavior"/>
 
 </android.support.design.widget.CoordinatorLayout>

@@ -4,23 +4,17 @@
         android:layout_height="match_parent"
         android:orientation="vertical" >
 
-
         <com.gdgst.common.commonwidget.NormalTitleBar
             android:id="@+id/ntb"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-
-
-
             <!-- got a view here for handwriting -->
-            <com.gdgst.androidfire.ui.main.view.PractiseWriteView
+            <com.gdgst.shuoke360.ui.main.view.PractiseWriteView
                 xmlns:custom="http://schemas.android.com/apk/res/com.jaydenxiao.androidfire.ui.main.view"
                 android:id="@+id/practise_write_view"
-                android:layout_width="fill_parent"
-                android:layout_height="220dp"
-                />
-
+                android:layout_width="match_parent"
+                android:layout_height="220dp" />
 
         <LinearLayout
             android:layout_width="fill_parent"

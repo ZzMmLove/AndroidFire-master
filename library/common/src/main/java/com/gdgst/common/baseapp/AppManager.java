@@ -11,7 +11,9 @@ import java.util.Stack;
  * activity管理
  */
 public class AppManager {
+    /**吧Activity放入任务栈*/
     private static Stack<Activity> activityStack;
+    //用volatile来修饰表示不稳定
     private volatile static AppManager instance;
 
     private AppManager() {
@@ -28,7 +30,6 @@ public class AppManager {
                     instance.activityStack = new Stack();
                 }
             }
-
         }
         return instance;
     }
@@ -69,7 +70,7 @@ public class AppManager {
     }
 
     /**
-     * 结束当前Activity（堆栈中最后一个压入的）
+     * 结束当前Activity（堆栈中最后一个压入的，也就是处于栈顶的那个activity）
      */
     public void finishActivity() {
         Activity activity = activityStack.lastElement();

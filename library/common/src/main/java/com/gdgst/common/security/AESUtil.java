@@ -29,7 +29,7 @@ public class AESUtil {
 			System.out.print("Key长度不是16位");
 			return null;
 		}
-		byte[] raw = key.getBytes("UTF-8");
+		byte[] raw = key.getBytes("UTF-8");   //把字符串转换成字节数组
 		SecretKeySpec skeySpec = new SecretKeySpec(raw, "AES");
 		Cipher cipher = Cipher.getInstance("AES/CBC/Iso10126Padding");//"算法/模式/补码方式"
 		IvParameterSpec ivps = new IvParameterSpec(iv.getBytes("UTF-8"));//使用CBC模式，需要一个向量iv，可增加加密算法的强度

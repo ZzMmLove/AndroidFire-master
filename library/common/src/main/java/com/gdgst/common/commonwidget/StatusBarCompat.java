@@ -16,9 +16,9 @@ import android.widget.FrameLayout;
  * 透明状态栏
  */
 public class StatusBarCompat {
-
+    /**半透明*/
     private static final int COLOR_TRANSLUCENT = Color.parseColor("#00000000");
-
+    /**默认的颜色渐变值*/
     public static final int DEFAULT_COLOR_ALPHA = 112;
 
     /**
@@ -33,10 +33,11 @@ public class StatusBarCompat {
         Window window = activity.getWindow();
         ViewGroup mContentView = (ViewGroup) activity.findViewById(Window.ID_ANDROID_CONTENT);
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+        //判断机型的版本号
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {  //用户手机的SDK大于19时
             //First translucent status bar.
             window.addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {   //用户手机的SDK大于23时
                 //After LOLLIPOP not translucent status bar
                 window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
                 //Then call setStatusBarColor.
@@ -91,6 +92,7 @@ public class StatusBarCompat {
         ViewGroup mContentView = (ViewGroup) activity.findViewById(Window.ID_ANDROID_CONTENT);
 
         //set child View not fill the system window
+        //设置子视图不填充满系统窗口
         View mChildView = mContentView.getChildAt(0);
         if (mChildView != null) {
             ViewCompat.setFitsSystemWindows(mChildView, false);

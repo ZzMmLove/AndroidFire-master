@@ -37,6 +37,10 @@ public class BaseAblistViewAdapter<T> extends android.widget.BaseAdapter {
         data = d;
     }
 
+    /**
+     * 更新资源
+     * @param d
+     */
     public void reset(List<T> d) {
         if (d== null)return;
         data.clear();
@@ -55,6 +59,11 @@ public class BaseAblistViewAdapter<T> extends android.widget.BaseAdapter {
         notifyDataSetChanged();
     }
 
+    /**
+     * 从某个位置开始添加资源
+     * @param position
+     * @param d
+     */
     public void addAllAt(int position,List<T> d) {
         if (d == null) return;
         if (data == null) data = new ArrayList<>();
@@ -68,6 +77,10 @@ public class BaseAblistViewAdapter<T> extends android.widget.BaseAdapter {
         notifyDataSetChanged();
     }
 
+    /**
+     * 添加数据
+     * @param d
+     */
     public void addAll(List<T> d) {
         if (d == null) return;
         if (data == null) data = new ArrayList<>();
@@ -75,6 +88,10 @@ public class BaseAblistViewAdapter<T> extends android.widget.BaseAdapter {
         notifyDataSetChanged();
     }
 
+    /**
+     * 移除数据
+     * @param position
+     */
     public void remove(int position) {
         if (data == null) return;
         data.remove(position);

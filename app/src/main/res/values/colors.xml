@@ -6,4 +6,14 @@
     <color name="primary_text_white">#deffffff</color>
     <!--87%white-->
     <color name="progress_bar_unfinished">#D4D4D4</color>
+    <color name="selector_button_down_6">#00CCFF</color>
+    <color name="selector_button_up_6">#25e1e1</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colB5B5B5">#B5B5B5</color>
+    <color name="colFFF2EF">#FFF2EF</color>
+    <color name="colF4F4F4">#F4F4F4</color>
+    <color name="col666666">#666666</color>
 </resources>

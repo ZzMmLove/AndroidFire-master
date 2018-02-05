@@ -1,23 +1,26 @@
 apply plugin: 'com.android.application'
+
 def releaseTime() {
     return new Date().format("yyyyMMdd", TimeZone.getTimeZone("UTC"))
 }
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.3"
-
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
     defaultConfig {
-        applicationId "com.gdgst.androidfire"
+        applicationId "com.gdgst.shuoke360"
         minSdkVersion 15
-        targetSdkVersion 23
+        targetSdkVersion 25
         versionCode 4
-        versionName "1.0.3"
+        versionName "2.0.1"
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
     }
     buildTypes {
         release {
             buildConfigField "boolean", "LOG_DEBUG", "false"
             minifyEnabled false
+            //shrinkResources true// 不打包没有使用的资源，false为打包
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             //apk命名
             android.applicationVariants.all { variant ->
@@ -25,13 +28,13 @@ android {
                     def outputFile = output.outputFile
                     if (outputFile != null && outputFile.name.endsWith('.apk')) {
                         //这里修改apk文件名
-                        def fileName = "AndroidFire-${defaultConfig.versionCode}-${defaultConfig.versionName}-${releaseTime()}.apk"
+                        def fileName = "GST-Shuoke-${defaultConfig.versionCode}-${defaultConfig.versionName}-${releaseTime()}.apk"
                         output.outputFile = new File(outputFile.parent, fileName)
                     }
                 }
             }
         }
-        debug{
+        debug {
             buildConfigField "boolean", "LOG_DEBUG", "true"
         }
     }
@@ -47,14 +50,43 @@ android {
     }
 }
 
+repositories{
+    flatDir{
+        dirs 'libs' //就是你放aar的目录地址
+    }
+}
+
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
 
-    compile project(':library:photoPicker')//图片选择
-    compile project(':library:irecyclerview')//万能适配器和recyclerview
-    compile project(':library:oneKeyShareSDK')//分享
-    compile project(':library:jcvideoplayer')//视频播放
-    compile project(':library:selectordialog')//常用提示框
-
+    //compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile files('libs/MobCommons-2017.0607.1736.jar')
+    compile files('libs/MobTools-2017.0607.1736.jar')
+    compile project(':library:photoPicker')
+    //图片选择
+    compile project(':library:irecyclerview')
+    //万能适配器和recyclerview
+//    compile project(':library:oneKeyShareSDK')
+    //分享
+    compile project(':library:jcvideoplayer')
+    //视频播放
+    compile project(':library:selectordialog')
+    //常用提示框
+    compile project(':imagebrowserlibrary')
+    //图片浏览
+    compile project(':easydialog')
+    //各种类型的dialog
+    //Banner实现IRecyclerView的headerView的广告轮播机制
+    compile 'com.youth.banner:banner:1.4.9'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.android.support:support-vector-drawable:25.3.1'
+    compile 'com.zhy:flowlayout-lib:1.0.3'
+    //流式布局
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    //圆形头像
+    compile 'me.thewyp:avatar:1.0.4'
+    //头像选择
+    //短信验证
+    compile name: 'SMSSDK-3.0.0', ext: 'aar'
 
 }

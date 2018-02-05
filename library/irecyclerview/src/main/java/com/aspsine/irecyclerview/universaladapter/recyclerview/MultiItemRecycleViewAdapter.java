@@ -7,13 +7,16 @@ import com.aspsine.irecyclerview.universaladapter.ViewHolderHelper;
 
 import java.util.List;
 
+/**
+ * 可适配多个不同item布局的适配器
+ * @param <T>
+ */
 public abstract class MultiItemRecycleViewAdapter<T> extends CommonRecycleViewAdapter<T>
 {
 
     protected MultiItemTypeSupport<T> mMultiItemTypeSupport;
 
-    public MultiItemRecycleViewAdapter(Context context, List<T> datas,
-                                       MultiItemTypeSupport<T> multiItemTypeSupport)
+    public MultiItemRecycleViewAdapter(Context context, List<T> datas, MultiItemTypeSupport<T> multiItemTypeSupport)
     {
         super(context, -1, datas);
         mMultiItemTypeSupport = multiItemTypeSupport;

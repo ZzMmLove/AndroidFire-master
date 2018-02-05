@@ -32,7 +32,7 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/night_one_text_color</item>
 
-        <item name="dayNightBackground">@color/day_backgroup_color</item>
+        <item name="dayNightBackground">@color/toast_white</item>
         <item name="dayNightOneTextColor">@color/day_one_text_color</item>
         <item name="dayNightTwoTextColor">@color/day_two_text_color</item>
         <item name="dayNightThreeTextColor">@color/day_three_text_color</item>

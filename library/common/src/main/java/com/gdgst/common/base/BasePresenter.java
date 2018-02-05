@@ -25,8 +25,11 @@ public abstract class BasePresenter<T,E>{
         this.mModel = m;
         this.onStart();
     }
+
     public void onStart(){
-    };
+
+    }
+
     public void onDestroy() {
         mRxManage.clear();
     }

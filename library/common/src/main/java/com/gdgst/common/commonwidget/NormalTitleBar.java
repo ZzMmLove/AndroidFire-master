@@ -11,7 +11,6 @@ import android.widget.TextView;
 import com.gdgst.common.R;
 import com.gdgst.common.commonutils.DisplayUtil;
 
-
 public class NormalTitleBar extends RelativeLayout {
 
     private ImageView ivRight;
@@ -37,8 +36,8 @@ public class NormalTitleBar extends RelativeLayout {
     }
 
     public void setHeaderHeight() {
-            rlCommonTitle.setPadding(0, DisplayUtil.getStatusBarHeight(context), 0, 0);
-            rlCommonTitle.requestLayout();
+        rlCommonTitle.setPadding(0, DisplayUtil.getStatusBarHeight(context), 0, 0);
+        rlCommonTitle.requestLayout();
     }
 
     /**

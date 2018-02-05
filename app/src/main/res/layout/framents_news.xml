@@ -1,26 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="horizontal">
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <com.aspsine.irecyclerview.IRecyclerView
-        android:id="@+id/irc"
-        android:layout_below="@+id/ntb"
+    <FrameLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <com.aspsine.irecyclerview.IRecyclerView
+            android:id="@+id/irc"
+            android:layout_below="@+id/ntb"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            app:loadMoreEnabled="true"
+           android:background="#EBEBEBFF"
+            app:refreshHeaderLayout="@layout/layout_irecyclerview_refresh_header"
+            app:refreshEnabled="true"
+            />
+
+        <TextView
+            android:id="@+id/tvchoise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|top"
+            android:text="筛  选"
+            android:textColor="@color/light_gray"
+            android:clickable="true"
+            android:visibility="gone"
+            android:background="@drawable/selector_frame_gv_item_bg"
+            android:textSize="20sp"/>
+
+        <com.gdgst.common.commonwidget.LoadingTip
+            android:id="@+id/loadedTip"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_nologin"
         android:layout_width="match_parent"
-        app:loadMoreEnabled="true"
-        android:background="?attr/dayNightBackground"
-        app:dayNightBackgroundAttr="dayNightBackground"
-        app:refreshHeaderLayout="@layout/layout_irecyclerview_refresh_header"
-        app:refreshEnabled="true"
-        />
-    <com.gdgst.common.commonwidget.LoadingTip
-        android:id="@+id/loadedTip"
-        android:layout_gravity="center"
+        android:layout_height="match_parent"
+        android:visibility="gone"
         android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
-</FrameLayout>
+        android:text="登录后才可以观看…"/>
+
+    <LinearLayout
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>
+
+
+

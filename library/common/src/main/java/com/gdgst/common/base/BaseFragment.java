@@ -67,26 +67,26 @@ public abstract  class BaseFragment<T extends BasePresenter, E extends BaseModel
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         if (rootView == null)
             rootView = inflater.inflate(getLayoutResource(), container, false);
-        mRxManager=new RxManager();
+        mRxManager = new RxManager();
         ButterKnife.bind(this, rootView);
         //通过创建进来的泛型T在TUtil中创建NewsMainModel的对象
         mPresenter = TUtil.getT(this, 0);
         //通过创建进来的泛型T在TUtil中创建NewsMainModel的对象
         mModel= TUtil.getT(this,1);
-        if(mPresenter!=null){
-            mPresenter.mContext=this.getActivity();
+        if(mPresenter != null){
+            mPresenter.mContext = this.getActivity();
         }
         initPresenter();
         initView();
         return rootView;
     }
+
     //获取布局文件
     protected abstract int getLayoutResource();
     //简单页面无需mvp就不用管此方法即可,完美兼容各种实际场景的变通
     public abstract void initPresenter();
     //初始化view
     protected abstract void initView();
-
 
     /**
      * 通过Class跳转界面
@@ -127,8 +127,6 @@ public abstract  class BaseFragment<T extends BasePresenter, E extends BaseModel
         startActivity(intent);
     }
 
-
-
     /**
      * 开启加载进度条
      */
@@ -138,7 +136,6 @@ public abstract  class BaseFragment<T extends BasePresenter, E extends BaseModel
 
     /**
      * 开启加载进度条
-     *
      * @param msg
      */
     public void startProgressDialog(String msg) {
@@ -151,7 +148,6 @@ public abstract  class BaseFragment<T extends BasePresenter, E extends BaseModel
     public void stopProgressDialog() {
         LoadingDialog.cancelDialogForLoading();
     }
-
 
     /**
      * 短暂显示Toast提示(来自String)
@@ -181,7 +177,6 @@ public abstract  class BaseFragment<T extends BasePresenter, E extends BaseModel
         ToastUitl.showLong(text);
     }
 
-
     public void showToastWithImg(String text,int res) {
         ToastUitl.showToastWithImg(text,res);
     }
@@ -205,7 +200,5 @@ public abstract  class BaseFragment<T extends BasePresenter, E extends BaseModel
             mPresenter.onDestroy();
         mRxManager.clear();
     }
-
-
 
 }

@@ -660,7 +660,6 @@ public class ACache {
 
         /**
          * 移除旧的文件
-         *
          * @return
          */
         private long removeNext() {

@@ -44,7 +44,7 @@ public abstract class RxSubscriber<T> extends Subscriber<T> {
         this.showDialog= true;
     }
 
-    public RxSubscriber(Context context, String msg,boolean showDialog) {
+    public RxSubscriber(Context context, String msg, boolean showDialog) {
         this.mContext = context;
         this.msg = msg;
         this.showDialog=showDialog;

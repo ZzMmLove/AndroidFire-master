@@ -21,7 +21,7 @@
         android:orientation="horizontal" >
 
         <!-- got a view here for handwriting -->
-        <com.gdgst.androidfire.practise.WriteView
+        <com.gdgst.shuoke360.onepractise.WriteView
             android:id="@+id/practise_write_view"
             xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"

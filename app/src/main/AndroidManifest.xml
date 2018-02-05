@@ -1,22 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.gdgst.androidfire">
+    package="com.gdgst.shuoke360">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
-        android:name="com.gdgst.androidfire.app.AppApplication"
+        android:name="com.gdgst.shuoke360.app.AppApplication"
         android:allowBackup="true"
         android:icon="@mipmap/logo"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+        <meta-data android:name="Mob-AppKey" android:value="2100f46cdc470"/>
+        <meta-data android:name="Mob-AppSecret" android:value="f161e1be7799d1171be48a69cbde826e"/>
+
         <activity
-            android:name="com.gdgst.androidfire.ui.main.activity.SplashActivity"
+            android:name="com.mob.tools.MobUIShell"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.gdgst.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <!--提供共享路径-->
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+
+        <activity
+            android:name="com.gdgst.shuoke360.ui.main.activity.SplashActivity"
             android:theme="@style/AppTheme.Launcher">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,24 +46,40 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.gdgst.androidfire.ui.news.activity.PhotosDetailActivity"
+        <activity
+            android:name="com.gdgst.shuoke360.ui.news.activity.PhotosDetailActivity"
             android:theme="@style/BaseAppTheme.Trans" />
-        <activity android:name="com.gdgst.androidfire.ui.main.activity.MainActivity"/>
-        <activity android:name="com.gdgst.androidfire.ui.news.activity.NewsDetailActivity"/>
-        <activity android:name="com.gdgst.androidfire.ui.news.activity.NewsBrowserActivity"/>
-        <activity android:name="com.gdgst.androidfire.ui.news.activity.NewsPhotoDetailActivity"/>
-        <activity android:name="com.gdgst.androidfire.ui.news.activity.NewsChannelActivity"/>
-        <activity android:name=".ui.zone.activity.CircleZoneActivity"/>
-        <activity android:name=".ui.zone.activity.CirclePublishActivity"/>
-        <activity android:name="com.gdgst.androidfire.ui.news.activity.AboutActivity"/>
-        <activity android:name="com.gdgst.androidfire.ui.main.view.PractiseActivity"/>
-        <activity android:name=".practise.PractiseOriginalActivity"/>
+        <activity android:name="com.gdgst.shuoke360.ui.main.activity.MainActivity" />
+        <activity android:name="com.gdgst.shuoke360.ui.news.activity.NewsDetailActivity" />
+        <activity android:name="com.gdgst.shuoke360.ui.news.activity.NewsBrowserActivity" />
+        <activity android:name="com.gdgst.shuoke360.ui.news.activity.NewsPhotoDetailActivity" />
+        <activity android:name="com.gdgst.shuoke360.ui.news.activity.NewsChannelActivity" />
+        <activity android:name="com.gdgst.shuoke360.ui.news.activity.AboutActivity" />
+        <activity android:name="com.gdgst.shuoke360.ui.main.view.PractiseActivity" />
+        <activity android:name="com.gdgst.shuoke360.onepractise.PractiseOriginalActivity" />
 
         <!-- 友盟统计 (原作者的value:57e8e398e0f55ae655000723) -->
         <meta-data
             android:name="UMENG_APPKEY"
-            android:value="" >
-        </meta-data>
+            android:value="" />
+
+        <activity android:name="com.gdgst.shuoke360.ui.news.activity.CopyBookPhotosListActivity" />
+        <activity android:name="com.gdgst.shuoke360.ui.news.activity.NormalNewsDetailActivity" />
+        <activity android:name="com.gdgst.shuoke360.ui.news.activity.NoteDetailActivity" />
+        <activity android:name="com.gdgst.shuoke360.ui.main.activity.SearchActivity"/>
+        <activity android:name="com.gdgst.shuoke360.ui.main.activity.LoginActivity"/>
+        <activity android:name="com.gdgst.shuoke360.ui.main.activity.RegisterActivity"/>
+        <activity android:name="com.gdgst.shuoke360.ui.main.activity.UserInfoActivity"/>
+        <activity android:name="com.gdgst.shuoke360.ui.main.activity.UpdatePasswordActivity"/>
+        <activity android:name="com.gdgst.shuoke360.ui.main.activity.CheckSMS"/>
+        <activity android:name="com.gdgst.shuoke360.ui.main.activity.ForgetPwdActivity"/>
+        <activity android:name="com.gdgst.shuoke360.ui.main.activity.HistoryActivity"/>
+        <activity android:name="com.gdgst.shuoke360.ui.main.activity.VideoPlayerActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.main.activity.NoteDownLoadActivity"/>
+        <service android:name="com.gdgst.shuoke360.service.UpdateAppService"/>
+        <service android:name=".downloadprogress.service.DownloadService"></service>
     </application>
 
 </manifest>
